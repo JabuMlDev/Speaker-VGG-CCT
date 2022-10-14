@@ -1,0 +1,6 @@
+/output/
+/datasets/
+/test/
+/data/
+/encoder/models/pca.pkl
+./.idea/
