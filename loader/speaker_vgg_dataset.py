@@ -44,6 +44,7 @@ class SpeakerVGGDataset(data.Dataset):
         self._consecutive_errors = 0
         if self.transform is not None:
             img = self.transform(img)
+            #print(img)
         if target is None:
             target = -1
         elif self.target_transform is not None:

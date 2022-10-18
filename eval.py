@@ -233,6 +233,7 @@ def main():
     # batch must be 1 in the data loader definition
     with torch.no_grad():
         for batch_idx, (input, target) in enumerate(loader):
+            #print(all_dataset_files[batch_idx])
             if isinstance(input, tuple):
                 input = (input[0].cuda(), input[1].cuda())
             else:
@@ -242,7 +243,7 @@ def main():
             top1 = labels.topk(1)[1].cpu().numpy()
             y_test_true.append(target.cpu().numpy()[0])
             y_test_predicted.append(top1[0][0])
-            predictions.append([all_dataset_files[batch_idx], target.cpu().numpy()[0], top1[0][0],
+            predictions.append([ target.cpu().numpy()[0], top1[0][0],
                                 idx_to_class[target.cpu().numpy()[0]], idx_to_class[top1[0][0]]])
 
     y_test_true = np.array(y_test_true)
