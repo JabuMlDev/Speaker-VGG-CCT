@@ -125,8 +125,15 @@ To change the following train parameters you can refer to the script.
 ### Evaluation
 After you have trained a model in the previous step, you can test it
 ```
-   python eval.py ./output/train/speaker_vgg_cct_end_to_end_14_7x2_224-pretrained/EMOVO/4_classes/no_aug/undersampling --data_test_path ./data/EMOVO/4_classes/no_aug/undersampling/eval_data
+   python eval.py <position_model_best_pth_tar> --data_test_path <position_train_data_folder> 
  ```
+The script requires the position of the model_best.pth.tar to evaluate
+as the first parameter (e.g. *./output/train/speaker_vgg_cct_end_to_end_14_7x2_224-pretrained/EMOVO/4_classes/no_aug/undersampling*) 
+and the position of the eval data folder generated in the split dataset step as the second parameter 
+(e.g. *./data/EMOVO/4_classes/no_aug/undersampling/eval_data*).<br/>
+The results of the experiments including the confusion matrix and the main evaluation metrics are saved in the 
+./test/ folder
+
 
 ## Models
 This project extends the implementation of the Compact Transformers repo distributed in
