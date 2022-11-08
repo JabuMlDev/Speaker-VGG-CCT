@@ -29,7 +29,8 @@ with state-of-the-art network architectures.
 
 ## Environment
 
-This repository is developed and tested on Ubuntu 20.04, Anaconda3, Python 3.6+, and PyTorch 1.10+.
+This repository is developed and tested on Ubuntu 20.04, Anaconda3, Python 3.7+, PyTorch 1.10+ 
+and CUDA (cudatoolkit=11.3.1).
 
 ## Quick Start
 
