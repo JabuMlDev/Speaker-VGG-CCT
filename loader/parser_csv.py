@@ -17,8 +17,7 @@ class ParserCSV(Parser):
         self.vgg_features = {}
         if read_vgg_features:
             self.vgg_features = self.__read_vgg_vox_features()
-
-        self.samples, self.classes = self.__clean_files_without_embedding()
+            self.samples, self.classes = self.__clean_files_without_embedding()
 
         self.class_to_idx = class_to_idx
 
