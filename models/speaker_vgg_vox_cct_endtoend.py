@@ -277,12 +277,25 @@ def speaker_vgg_cct_end_to_end_14(pretrained, progress, *args, **kwargs):
                             *args, **kwargs)
 
 @register_model
-def speaker_vgg_cct_end_to_end_14_7x2_224(pretrained=False, progress=False, img_size=224, positional_embedding='learnable',
-                             num_classes=10,
-                             *args, **kwargs):
-    return speaker_vgg_cct_end_to_end_14(arch='speaker_vgg_cct_end_to_end_14_7x2_224', pretrained=pretrained, progress=progress,
+def speaker_vgg_cct_end_to_end_14_7x2_224(pretrained=False, progress=False, img_size=224,
+                                          positional_embedding='learnable', num_classes=10, *args, **kwargs):
+    return speaker_vgg_cct_end_to_end_14(arch='speaker_vgg_cct_end_to_end_14_7x2_224',
+                                         pretrained=pretrained, progress=progress,
                              pretrained_arch="cct_14_7x2_224",
                              kernel_size=7, n_conv_layers=2,
                              img_size=img_size, positional_embedding=positional_embedding,
                              num_classes=num_classes,
+                             *args, **kwargs)
+
+@register_model
+def speaker_vgg_cct_end_to_end_speaker_token_14_7x2_224(pretrained=False, progress=False, img_size=224,
+                                                        positional_embedding='learnable', num_classes=10,
+                                                        *args, **kwargs):
+    return speaker_vgg_cct_end_to_end_14(arch='speaker_vgg_cct_end_to_end_speaker_token_14_7x2_224',
+                                         pretrained=pretrained, progress=progress,
+                             pretrained_arch="cct_14_7x2_224",
+                             kernel_size=7, n_conv_layers=2,
+                             img_size=img_size, positional_embedding=positional_embedding,
+                             num_classes=num_classes,
+                             type='speaker_token',
                              *args, **kwargs)
