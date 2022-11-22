@@ -1,5 +1,7 @@
 # SPEAKER VGG CCT: Cross-corpus Speech Emotion Recognition with Speaker Embedding and Vision Transformers
 
+### [PAPER](https://arxiv.org/abs/2211.02366) 
+
 This is an official pytorch implementation of *SPEAKER VGG CCT: Cross-corpus Speech Emotion Recognition with Speaker 
 Embedding and Vision Transformers (ACM Multimedia Asia 2022)*.<br/>
 In this paper, we start from the general idea that Speech Emotion Recognition can be solved transforming the speech 
@@ -23,6 +25,7 @@ are kept separate. Experiments have been performed on several
 benchmarks in a cross-corpus setting as rarely used in the literature, with results that are comparable or 
 superior to those obtained
 with state-of-the-art network architectures.
+
 <div align="center">
 <img src="images/speaker_vgg_cct_end_to_end_schema.png" alt="speaker vgg end to end schema" width="500"/>
 </div>
@@ -190,5 +193,6 @@ You can see the article for more information on the models and their nomenclatur
   title={SPEAKER VGG CCT: Cross-corpus Speech Emotion Recognition with Speaker Embedding and Vision Transformers},
   author={Alessandro Arezzo, Stefano Berretti},
   year={2022},
+  arXiv={https://arxiv.org/abs/2211.02366}
 }
 ```
