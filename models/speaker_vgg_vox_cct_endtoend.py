@@ -18,7 +18,7 @@ except ImportError:
 
 model_urls = {
     'cct_14_7x2_224':
-        'http://ix.cs.uoregon.edu/~alih/compact-transformers/checkpoints/pretrained/cct_14_7x2_224_imagenet.pth',
+        'https://shi-labs.com/projects/cct/checkpoints/pretrained/cct_14_7x2_224_imagenet.pth',
 }
 
 class SpeakerVGGVoxCCTEndToEnd(nn.Module):
